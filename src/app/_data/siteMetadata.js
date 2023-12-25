@@ -17,8 +17,8 @@ const siteMetadata = {
   siteImageUrl: 'https://lisandrojm.vercel.app/_assets/img/cover-share.webp',
   socialBanner: '/public/logo.webp',
   email: 'lisandrojm@gmail.com',
-  github: 'https://github.com',
-  linkedin: 'https://www.linkedin.com',
+  github: 'https://github.com/lisandrojm',
+  linkedin: 'https://www.linkedin.com/in/lisandrojm/',
   locale: 'en-US',
 };
 
