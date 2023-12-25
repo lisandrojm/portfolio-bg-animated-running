@@ -13,7 +13,7 @@ interface NavLink {
 }
 export default function Navbar() {
   return (
-    <header className="flex container mx-auto items-center justify-between py-10">
+    <header className="flex mx-3 items-center justify-between py-10 ">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
@@ -27,7 +27,7 @@ export default function Navbar() {
           </div>
         </Link>
       </div>
-      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+      <div className="flex items-center space-x-0 leading-5 sm:space-x-6">
         {headerNavLinks
           .filter((link: NavLink) => link.href !== '/')
           .map((link: NavLink) => (
