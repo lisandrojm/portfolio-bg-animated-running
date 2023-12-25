@@ -1,3 +1,5 @@
+/* src/app/_/Navbar.tsx */
+
 import siteMetadata from '@/_data/siteMetadata';
 import headerNavLinks from '@/_data/headerNavLinks';
 import Image from 'next/image';
@@ -11,7 +13,7 @@ interface NavLink {
 }
 export default function Navbar() {
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="flex container mx-auto items-center justify-between py-10">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
@@ -21,7 +23,7 @@ export default function Navbar() {
                 <Image src="/logo.svg" alt="logo" width={40} height={40} />
               </div>
             </div>
-            {typeof siteMetadata.headerTitle === 'string' ? <div className="hidden h-6 text-2xl font-semibold sm:block">{siteMetadata.headerTitle}</div> : siteMetadata.headerTitle}
+            {typeof siteMetadata.headerTitle === 'string' ? <div className="hidden h-6 text-1xl text-white font-semibold sm:block">{siteMetadata.headerTitle}</div> : siteMetadata.headerTitle}
           </div>
         </Link>
       </div>

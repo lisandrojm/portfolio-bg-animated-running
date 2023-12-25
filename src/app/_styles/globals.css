@@ -79,6 +79,9 @@ html {
 img {
   max-width: 100%;
 }
+img:hover {
+  opacity: 0.9;
+}
 
 ul,
 a {
