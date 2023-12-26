@@ -25,9 +25,9 @@ export default function ThemeSwitcher() {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     if (currentTheme === 'dark') {
-      return <MoonIcon className="w-6 h-6 text-orange m-1" role="button" onClick={() => setTheme('light')} />;
+      return <MoonIcon className="w-6 h-6 text-orange m-2" role="button" onClick={() => setTheme('light')} />;
     } else {
-      return <SunIcon className="w-6 h-6 text-orange  m-1" role="button" onClick={() => setTheme('dark')} />;
+      return <SunIcon className="w-6 h-6 text-orange  m-2" role="button" onClick={() => setTheme('dark')} />;
     }
   };
 
