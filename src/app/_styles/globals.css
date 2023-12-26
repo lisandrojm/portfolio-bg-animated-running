@@ -63,34 +63,23 @@
   }
 }
 /* Global styles */
-.task-list-item::before {
-  @apply hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.task-list-item {
-  @apply list-none;
+img {
+  max-width: 100%;
+}
+img:hover {
+  opacity: 0.9;
 }
 
-.footnotes {
-  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
-}
-
-.data-footnote-backref {
-  @apply no-underline;
-}
-
-.csl-entry {
-  @apply my-5;
-}
-
-/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
-}
-
-.katex-display {
-  overflow: auto hidden;
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
 }
 button:hover,
 li:hover,
