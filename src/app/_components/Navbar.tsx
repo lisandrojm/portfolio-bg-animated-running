@@ -28,7 +28,7 @@ export default function Navbar() {
               <div>
                 <h2>
                   lisandrojm <br className="md:hidden" />
-                  <span className="hidden md:inline">|</span> FullStackDev
+                  <span className="hidden lg:inline">|</span> <span className="hidden md:inline">FullStackDev</span>
                 </h2>
               </div>
             </div>
