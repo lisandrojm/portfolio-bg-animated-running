@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import SectionContainer from '@/_components/SectionContainer';
 
 /* export default async function Home() { */
 /* loading testing */
@@ -9,21 +10,23 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-between">
-      {/* Fonts test */}
-      <div className="border rounded p-3 my-1 mb-3">
-        <h1 className="font-serif italic text-3xl">Home</h1>
+    <SectionContainer>
+      <div className="flex flex-col items-center justify-between">
+        {/* Fonts test */}
+        <div className="border rounded p-3 my-1 mb-3">
+          <h1 className="font-serif italic text-3xl">Home</h1>
+        </div>
+        <div className="border rounded p-3 my-1">
+          <h1 className="font-serif italic text-3xl">Fonts</h1>
+          <p>Roboto Mono</p>
+          <p className={`font-flex`}>Roboto Flex</p>
+          <p className={`font-serif`}>Roboto Serif</p>
+          <p className={`font-serif font-bold`}>Roboto Serif bold</p>
+          <p className={`font-serif italic`}>Roboto Serif italic</p>
+          <p className={`font-serif italic font-bold uppercase`}>Roboto Serif italic bold uppercase</p>
+        </div>
       </div>
-      <div className="border rounded p-3 my-1">
-        <h1 className="font-serif italic text-3xl">Fonts</h1>
-        <p>Roboto Mono</p>
-        <p className={`font-flex`}>Roboto Flex</p>
-        <p className={`font-serif`}>Roboto Serif</p>
-        <p className={`font-serif font-bold`}>Roboto Serif bold</p>
-        <p className={`font-serif italic`}>Roboto Serif italic</p>
-        <p className={`font-serif italic font-bold uppercase`}>Roboto Serif italic bold uppercase</p>
-      </div>
-    </div>
+    </SectionContainer>
     /*     <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
       <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">

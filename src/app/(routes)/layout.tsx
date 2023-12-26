@@ -63,8 +63,8 @@ export const metadata: Metadata & {
       favicon: [32, 96, 16],
     },
   },
-  url: 'https://lisandrojm.vercel.app',
-  image: 'https://lisandrojm.vercel.app/_assets/img/cover-share.webp',
+  url: siteMetadata.siteImageUrl,
+  image: siteMetadata.siteImageUrl,
   charset: 'utf-8',
   httpEquiv: {
     'X-UA-Compatible': 'IE.edge',
@@ -105,7 +105,7 @@ export const metadata: Metadata & {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${roboto_mono.variable} ${roboto_serif.variable} ${roboto_flex.variable}`}>
+    <html lang={siteMetadata.language} className={`${roboto_mono.variable} ${roboto_serif.variable} ${roboto_flex.variable}`}>
       <body className="font-mono">
         <Provider>
           <Navbar />

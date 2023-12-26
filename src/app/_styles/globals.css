@@ -54,7 +54,7 @@
   [data-theme='light'] {
     --accent-1: #000000;
     --accent-2: #ffffff;
-    --accent-3: #f7768e;
+    --accent-3: #ffffff;
     --accent-4: #ba9af7;
     --accent-5: #ff9e63;
     --accent-6: #08c294;
@@ -87,7 +87,7 @@ a:hover,
 
 body {
   color: var(--accent-1);
-  background: var(--accent-2);
+  background: var(--accent-3);
 }
 
 /* Fonts */
