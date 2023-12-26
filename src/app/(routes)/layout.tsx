@@ -7,7 +7,6 @@ import '@/_styles/globals.css';
 import Navbar from '@/_components/Navbar';
 import Footer from '@/_components/Footer';
 import Provider from '@/_components/Provider';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 const roboto_mono = Roboto_Mono({ subsets: ['latin'], variable: '--font-mono' });
 const roboto_serif = Roboto_Serif({ subsets: ['latin'], variable: '--font-serif' });
 const roboto_flex = Roboto_Flex({ subsets: ['latin'], variable: '--font-flex' });

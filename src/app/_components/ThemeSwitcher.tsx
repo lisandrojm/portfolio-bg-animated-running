@@ -4,9 +4,8 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
-import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { FaSun } from 'react-icons/fa';
+import { FaMoon } from 'react-icons/fa';
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -26,9 +25,9 @@ export default function ThemeSwitcher() {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     if (currentTheme === 'dark') {
-      return <FontAwesomeIcon icon={faMoon} className="w-6 h-6 text-orange" role="button" onClick={() => setTheme('light')} />;
+      return <FaMoon className="text-2xl text-orange" role="button" onClick={() => setTheme('light')} />;
     } else {
-      return <FontAwesomeIcon icon={faSun} className="w-6 h-6 text-orange" role="button" onClick={() => setTheme('dark')} />;
+      return <FaSun className="text-2xl text-orange" role="button" onClick={() => setTheme('dark')} />;
     }
   };
 
