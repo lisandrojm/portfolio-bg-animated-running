@@ -49,10 +49,10 @@ export default function Navbar() {
             </div>
           ))}
         <Link className="text-white" href={siteMetadata.github}>
-          <FontAwesomeIcon className="ml-5 text-2xl" icon={faGithub} />
+          <FontAwesomeIcon className="ml-4 sm:ml-5 text-2xl" icon={faGithub} />
         </Link>
         <Link className="text-white" href={siteMetadata.linkedin}>
-          <FontAwesomeIcon className="mx-5 text-2xl" icon={faLinkedin} />
+          <FontAwesomeIcon className="mx-4 sm:mx-5 text-2xl" icon={faLinkedin} />
         </Link>
         <ThemeSwitcher />
         <MobileNav />
