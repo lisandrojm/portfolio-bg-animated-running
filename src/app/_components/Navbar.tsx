@@ -52,7 +52,7 @@ export default function Navbar() {
           <FontAwesomeIcon className="ml-4 sm:ml-5 text-2xl" icon={faGithub} />
         </Link>
         <Link className="text-white" href={siteMetadata.linkedin}>
-          <FontAwesomeIcon className="mx-4 sm:mx-5 text-2xl" icon={faLinkedin} />
+          <FontAwesomeIcon className="ml-4 mr-3 sm:ml-5 sm:mr-4 text-2xl" icon={faLinkedin} />
         </Link>
         <ThemeSwitcher />
         <MobileNav />
