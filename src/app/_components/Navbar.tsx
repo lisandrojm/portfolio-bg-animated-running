@@ -23,12 +23,12 @@ export default function Navbar() {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 {' '}
-                <div className="flex items-center justify-center text-white">
+                <div className="flex items-end justify-center text-white">
                   <div className="mr-3 mb-1">
                     <Image src="/logo.svg" alt="logo" width={40} height={40} />
                   </div>
                   <div>
-                    <h2>
+                    <h2 className="m-0 leading-5">
                       <span className="sm:hidden">F.S.Dev</span>
                       <span className="hidden sm:inline-flex">FullStackDev</span>
                       <br />
