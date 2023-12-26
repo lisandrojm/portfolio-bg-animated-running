@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header>
       <div className="container mx-auto">
-        <div className="flex items-end justify-between pt-5 sm:pt-8 pb-2 border-b border-white mx-3 xl:mx-40 ">
+        <div className="flex items-end justify-between pt-5 sm:pt-8 pb-2 border-b border-white mx-3 xl:mx-40 px-3 ">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
@@ -29,9 +29,10 @@ export default function Navbar() {
                   </div>
                   <div>
                     <h2>
-                      <span className="text-sm">lisandrojm </span>
+                      <span className="sm:hidden">F.S.Dev</span>
+                      <span className="hidden sm:inline-flex">FullStackDev</span>
                       <br />
-                      FullStackDev
+                      <span className="text-sm">lisandrojm </span>
                     </h2>
                   </div>
                 </div>
