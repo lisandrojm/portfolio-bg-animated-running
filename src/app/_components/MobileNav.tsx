@@ -2,6 +2,7 @@
 
 'use client';
 
+import styles from '@/_styles/_components/MobileNav.module.css';
 import { useState } from 'react';
 import Link from './Link';
 import headerNavLinks from '@/_data/headerNavLinks';
@@ -22,7 +23,7 @@ export default function MobileNav() {
   };
 
   return (
-    <>
+    <div>
       <button aria-label="Toggle Menu" onClick={onToggleNav} className="lg:hidden pl-3">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-8 w-8 text-white">
           <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
@@ -36,7 +37,7 @@ export default function MobileNav() {
             </svg>
           </button>
         </div>
-        <nav className="fixed mt-8 h-full">
+        <div className="fixed mt-8 h-full">
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12 py-4">
               <Link href={link.href} className="text-xl tracking-widest text-white" onClick={onToggleNav}>
@@ -44,8 +45,8 @@ export default function MobileNav() {
               </Link>
             </div>
           ))}
-        </nav>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
