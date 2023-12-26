@@ -14,7 +14,7 @@ export default function Footer() {
     <HeaderFooterContainer>
       <footer className={`${styles.footer}`}>
         <div className="container mx-auto">
-          <div className="border-t border-white pt-2 px-3 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div className="border-t border-white pt-2 px-3 flex flex-col md:flex-row justify-between items-end md:items-center gap-4">
             <div className="flex justify-center items-center">
               <h6 className="font-serif text-xl text-orange">
                 site stack <span className="px-2">|</span>
