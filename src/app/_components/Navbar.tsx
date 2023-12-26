@@ -17,8 +17,8 @@ interface NavLink {
 export default function Navbar() {
   return (
     <header>
-      <div className="container">
-        <div className="flex items-end justify-between pt-5 sm:pt-10 pb-2 border-b border-white mx-3 sm:mx-40">
+      <div className="container mx-auto">
+        <div className="flex items-end justify-between pt-5 sm:pt-8 pb-2 border-b border-white mx-3 xl:mx-40 ">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
@@ -30,7 +30,7 @@ export default function Navbar() {
                   <div>
                     <h2>
                       lisandrojm <br className="md:hidden" />
-                      <span className="hidden lg:inline">|</span> <span className="hidden lg:inline">FullStackDev</span>
+                      <span className="hidden xl:inline">|</span> <span className="hidden sm:inline">FullStackDev</span>
                     </h2>
                   </div>
                 </div>
