@@ -88,10 +88,6 @@ a:hover,
 body {
   color: var(--accent-1);
   background: var(--accent-2);
-  overflow-x: hidden;
-  max-width: 100%;
-  width: 100%;
-  overscroll-behavior: none;
 }
 
 /* Fonts */
