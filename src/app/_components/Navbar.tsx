@@ -23,14 +23,15 @@ export default function Navbar() {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 {' '}
-                <div className="flex items-end justify-center font-semibold text-white">
+                <div className="flex items-center justify-center text-white">
                   <div className="mr-3 mb-1">
                     <Image src="/logo.svg" alt="logo" width={40} height={40} />
                   </div>
                   <div>
                     <h2>
-                      lisandrojm <br className="md:hidden" />
-                      <span className="hidden xl:inline">|</span> <span className="hidden sm:inline">FullStackDev</span>
+                      <span className="text-sm">lisandrojm </span>
+                      <br />
+                      FullStackDev
                     </h2>
                   </div>
                 </div>
