@@ -8,7 +8,7 @@ export default function Footer() {
     <header className={`${styles.navbar}`}>
       <nav>
         <div className="container mx-auto">
-          <div className="pt-2 pb-10 border-t border-white mx-3 xl:mx-40 px-3">
+          <div className="pt-2 pb-5 sm:pb-8 border-t border-white mx-3 xl:mx-40 px-3">
             <h2>Footer</h2>
           </div>
         </div>
