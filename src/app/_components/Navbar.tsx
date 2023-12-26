@@ -16,7 +16,7 @@ interface NavLink {
 }
 export default function Navbar() {
   return (
-    <header className="container mx-auto px-4 flex items-center justify-between py-10">
+    <header className="container mx-auto px-3 sm:px-10 flex items-center justify-between py-10">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
@@ -28,26 +28,31 @@ export default function Navbar() {
               <div>
                 <h2>
                   lisandrojm <br className="md:hidden" />
-                  <span className="hidden lg:inline">|</span> <span className="hidden md:inline">FullStackDev</span>
+                  <span className="hidden lg:inline">|</span> <span className="hidden lg:inline">FullStackDev</span>
                 </h2>
               </div>
             </div>
           </div>
         </Link>
       </div>
-      <div className="flex items-center space-x-0 leading-5 sm:space-x-6">
+      <div className="flex items-center leading-5 ">
         {headerNavLinks
           .filter((link: NavLink) => link.href !== '/')
-          .map((link: NavLink) => (
-            <Link key={link.title} href={link.href} className="hidden text-white md:block">
-              {link.title}
-            </Link>
+          .map((link: NavLink, index: number) => (
+            <div key={link.title} className="hidden lg:inline">
+              <div className="flex">
+                {index > 0 && <span className="text-white mx-3">|</span>}
+                <Link href={link.href} className="hidden text-white lg:inline">
+                  {link.title}
+                </Link>
+              </div>
+            </div>
           ))}
-        <Link className="text-white" href="#">
-          <FontAwesomeIcon className="text-2xl" icon={faGithub} />
+        <Link className="text-white" href={siteMetadata.github}>
+          <FontAwesomeIcon className="ml-5 text-2xl" icon={faGithub} />
         </Link>
-        <Link className="text-white" href="#">
-          <FontAwesomeIcon className="m-3 text-2xl" icon={faLinkedin} />
+        <Link className="text-white" href={siteMetadata.linkedin}>
+          <FontAwesomeIcon className="mx-5 text-2xl" icon={faLinkedin} />
         </Link>
         <ThemeSwitcher />
         <MobileNav />

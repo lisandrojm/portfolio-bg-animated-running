@@ -1,10 +1,12 @@
+/* src/app/_components/MobileNav.tsx */
+
 'use client';
 
 import { useState } from 'react';
 import Link from './Link';
 import headerNavLinks from '@/_data/headerNavLinks';
 
-const MobileNav = () => {
+export default function MobileNav() {
   const [navShow, setNavShow] = useState(false);
 
   const onToggleNav = () => {
@@ -21,7 +23,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <button aria-label="Toggle Menu" onClick={onToggleNav} className="md:hidden pl-3">
+      <button aria-label="Toggle Menu" onClick={onToggleNav} className="lg:hidden pl-3">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-8 w-8 text-white">
           <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h09a1 1 0 100 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
         </svg>
@@ -46,6 +48,4 @@ const MobileNav = () => {
       </div>
     </>
   );
-};
-
-export default MobileNav;
+}

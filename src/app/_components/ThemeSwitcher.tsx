@@ -4,8 +4,9 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { SunIcon } from '@heroicons/react/outline';
-import { MoonIcon } from '@heroicons/react/solid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -25,9 +26,9 @@ export default function ThemeSwitcher() {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     if (currentTheme === 'dark') {
-      return <MoonIcon className="w-6 h-6 text-orange m-2" role="button" onClick={() => setTheme('light')} />;
+      return <FontAwesomeIcon icon={faMoon} className="w-6 h-6 text-orange" role="button" onClick={() => setTheme('light')} />;
     } else {
-      return <SunIcon className="w-6 h-6 text-orange  m-2" role="button" onClick={() => setTheme('dark')} />;
+      return <FontAwesomeIcon icon={faSun} className="w-6 h-6 text-orange" role="button" onClick={() => setTheme('dark')} />;
     }
   };
 
