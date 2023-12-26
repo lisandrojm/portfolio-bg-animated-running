@@ -109,10 +109,15 @@ body {
 }
 
 /* Fonts */
-.font-mono,
-.font-serif,
-.font-flex {
+
+.font-mono {
   font-family: var(--font-mono), sans-serif;
+}
+.font-flex {
+  font-family: var(--font-flex), sans-serif;
+}
+.font-serif {
+  font-family: var(--font-serif), serif;
 }
 
 /* Media queries */
