@@ -7,5 +7,5 @@ interface Props {
 }
 
 export default function HeaderFooterContainer({ children }: Props) {
-  return <section className="py-8 mx-3 xl:mx-40">{children}</section>;
+  return <section className="py-6 mx-3 xl:mx-40">{children}</section>;
 }
