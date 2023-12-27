@@ -1,9 +1,8 @@
 /* src/app/_components/_icons/LinkIcons.tsx */
 
 import { FaGithub, FaLinkedin, FaEnvelope, FaReact } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
+import { TbBrandNextjs, TbBrandVercel } from 'react-icons/tb';
 import { SiTailwindcss } from 'react-icons/si';
-import { IoLogoVercel } from 'react-icons/io5';
 import Link from 'next/link';
 
 const components = {
@@ -13,7 +12,7 @@ const components = {
   react: FaReact,
   nextjs: TbBrandNextjs,
   tailwind: SiTailwindcss,
-  vercel: IoLogoVercel,
+  vercel: TbBrandVercel,
 };
 
 type SocialIconProps = {

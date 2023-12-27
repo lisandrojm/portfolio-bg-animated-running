@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import siteMetadata from '@/_data/siteMetadata';
 import { Roboto_Mono, Roboto_Serif, Roboto_Flex } from 'next/font/google';
 import '@/_styles/globals.css';
-import Navbar from '@/_components/Navbar';
+import Navbar from '@/_components/Header';
 import Footer from '@/_components/Footer';
 import Provider from '@/_components/Provider';
 const roboto_mono = Roboto_Mono({ subsets: ['latin'], variable: '--font-mono' });

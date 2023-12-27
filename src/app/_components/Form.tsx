@@ -37,7 +37,7 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="mt-6">
+          <div className="mt-6 text-end">
             <Button type="submit">Send</Button>
           </div>
           <div>

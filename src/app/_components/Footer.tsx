@@ -1,13 +1,14 @@
 /* src/app/_components/Footer.tsx */
 
-import Link from 'next/link';
 import styles from '@/_styles/_components/Footer.module.css';
-import HeaderFooterContainer from '@/_components/HeaderFooterContainer';
+import siteMetadata from '@/_data/siteMetadata';
 import LinkIcon from '@/_components/_icons/LinksIcons';
+import Link from 'next/link';
+import HeaderFooterWrapper from '@/_components/HeaderFooterWrapper';
 
 export default function Footer() {
   return (
-    <HeaderFooterContainer>
+    <HeaderFooterWrapper>
       <footer className={`${styles.footer}`}>
         <div className="container mx-auto">
           <div className="border-t border-white pt-3 px-3 flex flex-col md:flex-row justify-between items-end md:items-center gap-4">
@@ -25,17 +26,20 @@ export default function Footer() {
                 <li>
                   <LinkIcon kind="tailwind" href="https://tailwindcss.com/" size={2} color="orange" />
                 </li>
+                <li>
+                  <LinkIcon kind="vercel" href="https://vercel.com/" size={2} color="orange" />
+                </li>
               </ul>
             </div>
             <div className="flex">
-              <LinkIcon kind="github" href="https://github.com/lisandrojm/portfolio" size={2} color="white" />
-              <Link href={'https://github.com/lisandrojm/portfolio'} className="font-serif italic text-white text-md ml-3">
+              <LinkIcon kind="github" href={siteMetadata.github} size={2} color="white" />
+              <Link href={siteMetadata.github} className="font-serif italic text-white text-md ml-3">
                 site code →
               </Link>
             </div>
           </div>
         </div>
       </footer>
-    </HeaderFooterContainer>
+    </HeaderFooterWrapper>
   );
 }

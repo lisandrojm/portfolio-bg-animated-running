@@ -2,11 +2,11 @@
 
 import styles from '@/_styles/_components/Navbar.module.css';
 import siteMetadata from '@/_data/siteMetadata';
-import HeaderFooterContainer from '@/_components/HeaderFooterContainer';
+import HeaderFooterContainer from '@/_components/HeaderFooterWrapper';
 import headerNavLinks from '@/_data/headerNavLinks';
 import Image from 'next/image';
 import Link from '@/_components/Link';
-import MobileNav from '@/_components/MobileNav';
+import HeaderMobileNav from '@/_components/HeaderMobileNav';
 import ThemeSwitcher from '@/_components/ThemeSwitcher';
 import LinkIcon from '@/_components/_icons/LinksIcons';
 
@@ -24,14 +24,13 @@ export default function Navbar() {
               <div>
                 <Link href="/" aria-label={siteMetadata.headerTitle}>
                   <div className="flex items-center justify-between">
-                    {' '}
                     <div className="flex items-center justify-center text-white">
                       <div className="mr-3 mb-1">
                         <Image src="/logo.svg" alt="logo" width={40} height={40} />
                       </div>
                       <div>
                         <h2 className="m-0 leading-5">
-                          <span className="sm:hidden">F.S.Dev</span>
+                          <span className="sm:hidden">FullStack</span>
                           <span className="hidden sm:inline-flex">FullStackDev</span>
                           <br />
                           <span className="text-sm">lisandrojm </span>
@@ -57,7 +56,7 @@ export default function Navbar() {
                 <LinkIcon kind="github" href={siteMetadata.github} size={3} color="white" margin="ml-4 sm:ml-5" padding="" />
                 <LinkIcon kind="linkedin" href={siteMetadata.linkedin} size={3} color="white" margin="ml-4 mr-3 sm:ml-5 sm:mr-5" padding="" />
                 <ThemeSwitcher />
-                <MobileNav />
+                <HeaderMobileNav />
               </div>
             </div>
           </div>
