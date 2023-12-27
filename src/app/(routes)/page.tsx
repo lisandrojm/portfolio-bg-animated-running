@@ -54,63 +54,73 @@ export default function Home() {
         <li className="drift drift-4 delay-2">
           <div className="float float-4">
             {/*Nextjs */}
-            <BgIcons kind="nextjs" textColor="orange" size={1} />
+            <BgIcons kind="nextjs" textColor="orange" size={3} />
           </div>
         </li>
         <li className="drift drift-5">
           <div className="float float-5">
-            <i className="fa fa-opera lg"></i>
+            {/*Tailwind */}
+            <BgIcons kind="tailwind" textColor="orange" size={2} />
           </div>
         </li>
         <li className="drift drift-6 delay-2">
           <div className="float float-6">
-            <i className="fa fa-android lg"></i>
+            {/*Nextjs */}
+            <BgIcons kind="nextjs" textColor="orange" size={3} />
           </div>
         </li>
         <li className="drift drift-7">
           <div className="float float-7">
-            <i className="fa fa-apple lg"></i>
+            {/*Vercel */}
+            <BgIcons kind="vercel" textColor="orange" size={2} />
           </div>
         </li>
         <li className="drift drift-8 delay-5">
           <div className="float float-8">
-            <i className="fa fa-windows lg"></i>
+            {/*Js */}
+            <BgIcons kind="js" textColor="orange" size={1} />
           </div>
         </li>
         <li className="drift drift-9 delay-5">
           <div className="float float-9">
-            <i className="fa fa-safari lg"></i>
+            {/*Boostrap*/}
+            <BgIcons kind="bootstrap" textColor="orange" size={2} />
           </div>
         </li>
         <li className="drift drift-10 delay-3">
           <div className="float float-10">
-            <i className="fa fa-safari sm"></i>
+            {/*Nodejs*/}
+            <BgIcons kind="nodejs" textColor="orange" size={1} />
           </div>
         </li>
-
         <li className="drift drift-5 delay-4">
           <div className="float float-7">
-            <i className="fa fa-chrome md"></i>
+            {/*Express*/}
+            <BgIcons kind="express" textColor="orange" size={3} />
           </div>
         </li>
         <li className="drift drift-2 delay-5">
           <div className="float float-3">
-            <i className="fa fa-firefox sm"></i>
+            {/*Nestjs*/}
+            <BgIcons kind="nestjs" textColor="orange" size={3} />
           </div>
         </li>
-        <li className="drift drift-3 delay-1">
-          <div className="float float-9">
-            <i className="fa fa-windows sm"></i>
+        <li className="drift drift-3 delay-1 mt-5">
+          <div className="float float-8">
+            {/*MongoDb*/}
+            <BgIcons kind="mongodb" textColor="orange" size={1} />
           </div>
         </li>
         <li className="drift drift-6 delay-5">
           <div className="float float-1">
-            <i className="fa fa-edge md"></i>
+            {/*Typescript*/}
+            <BgIcons kind="ts" textColor="orange" size={3} />
           </div>
         </li>
         <li className="drift drift-9 delay-2">
           <div className="float float-10">
-            <i className="fa fa-apple sm"></i>
+            {/*Git*/}
+            <BgIcons kind="git" textColor="orange" size={1} />
           </div>
         </li>
       </ul>
