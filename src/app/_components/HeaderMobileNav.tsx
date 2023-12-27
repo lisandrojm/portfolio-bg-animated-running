@@ -32,11 +32,11 @@ export default function MobileNav() {
         </svg>
       </button>
       <div className={`fixed left-0 top-0 z-10 h-full w-full transform inset-0 backdrop-blur-lg border-l-[1px] border-orange duration-300 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex justify-between items-center pl-8 pr-6 pt-7">
+        <div className="flex justify-between items-center pl-8 pr-6 pt-7 pb-4 border-b border-orange">
           <div>
-            <Link onClick={onToggleNav} className="m-0 leading-5 text-orange font-serif italic text-2xl" href="/" aria-label={siteMetadata.headerTitle}>
-              FullStackDev <br />
-              <span className="text-sm">lisandrojm </span>
+            <Link onClick={onToggleNav} className="m-0 leading-7 text-orange font-serif italic text-2xl" href="/" aria-label={siteMetadata.headerTitle}>
+              All Killer, <br />
+              No Filler.
             </Link>
           </div>
           <div>
@@ -48,16 +48,18 @@ export default function MobileNav() {
           </div>
         </div>
         <div className="fixed h-full">
-          {headerNavLinks.map((link, index) => (
-            <div key={link.title} className="pl-8 py-4">
-              <Link href={link.href} className="text-xl tracking-widest text-white" onClick={onToggleNav}>
-                {link.title}
-                {index < headerNavLinks.length - 0 && <span className="text-orange mx-3">→</span>}
-              </Link>
-            </div>
-          ))}
+          <ul>
+            {headerNavLinks.map((link, index) => (
+              <li key={link.title} className="pl-8 py-4">
+                <Link href={link.href} className="text-xl tracking-widest text-white" onClick={onToggleNav}>
+                  {link.title}
+                  {index < headerNavLinks.length - 0 && <span className="text-orange mx-3">→</span>}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <div className="pl-8 py-4 ">
-            <Button size="xxl" font="mono">
+            <Button size="xxl" font="mono" onClick={onToggleNav}>
               Contact Me
             </Button>
           </div>
