@@ -40,9 +40,6 @@ export default function Example() {
           <div className="mt-6 text-end">
             <Button type="submit">Send</Button>
           </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe at, cum atque iste quis recusandae nam voluptates fugiat sequi veniam itaque nisi laudantium quaerat iure dolorum molestiae, temporibus velit. Magni!</p>
-          </div>
         </form>
       </div>
     </SectionContainer>

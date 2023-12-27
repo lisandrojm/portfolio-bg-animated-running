@@ -37,12 +37,12 @@
       --accent-2: #000000; /* black */
       --accent-3: #15151e; /* darkblue */
       --accent-4: #08c294; /* green */
-      --accent-5: #79a1f7; /* lightblue */
+      --accent-5: #79a1f7; /* blue */
       --accent-6: #ba9af7; /* violet */
       --accent-7: #f7768e; /* red */
       --accent-8: #ff9e63; /* orange */
       --accent-9: #ba3a93; /* darkred */
-      --accent-10: #2d64da; /* blue */
+      --accent-10: #2d64da; /* electricblue */
     }
   }
   [data-theme='dark'] {
