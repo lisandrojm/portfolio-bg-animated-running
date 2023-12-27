@@ -10,6 +10,7 @@ import MobileNav from '@/_components/MobileNav';
 import ThemeSwitcher from '@/_components/ThemeSwitcher';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import LinkIcon from '@/_components/_icons/LinksIcons';
 
 interface NavLink {
   title: string;
@@ -55,12 +56,8 @@ export default function Navbar() {
                       </div>
                     </div>
                   ))}
-                <Link className="text-white" href={siteMetadata.github} target="_blank" rel="noopener noreferrer">
-                  <FaGithub className="ml-4 sm:ml-5 text-3xl" />
-                </Link>
-                <Link className="text-white" href={siteMetadata.linkedin} target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin className="ml-4 mr-3 sm:ml-5 sm:mr-4 text-3xl" />
-                </Link>
+                <LinkIcon kind="github" href={siteMetadata.github} size={3} color="white" margin="ml-4 sm:ml-5" padding="" />
+                <LinkIcon kind="linkedin" href={siteMetadata.linkedin} size={3} color="white" margin="ml-4 mr-3 sm:ml-5 sm:mr-5" padding="" />
                 <ThemeSwitcher />
                 <MobileNav />
               </div>
