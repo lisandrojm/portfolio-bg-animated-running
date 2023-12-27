@@ -1,4 +1,4 @@
-/* src/app/_components/_icons/ButtonIcons.tsx */
+/* src/app/_components/_icons/ButtonsIcons.tsx */
 
 import { FaSun, FaMoon } from 'react-icons/fa';
 

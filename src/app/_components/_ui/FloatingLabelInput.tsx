@@ -1,4 +1,4 @@
-// src/app/_components/_ui/FloatingLabelInput.tsx
+/* src/app/_components/_ui/FloatingLabelInput.tsx */
 
 import React, { useState } from 'react';
 

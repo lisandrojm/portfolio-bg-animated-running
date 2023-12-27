@@ -1,4 +1,4 @@
-/* src/app/_components/_icons/LinkIcons.tsx */
+/* src/app/_components/_icons/LinksIcons.tsx */
 
 import { FaGithub, FaLinkedin, FaEnvelope, FaReact } from 'react-icons/fa';
 import { TbBrandNextjs, TbBrandVercel } from 'react-icons/tb';

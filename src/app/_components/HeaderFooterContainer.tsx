@@ -6,6 +6,6 @@ interface Props {
   children: ReactNode;
 }
 
-export default function HeaderFooterWrapper({ children }: Props) {
+export default function HeaderFooterContainer({ children }: Props) {
   return <section className="py-6 mx-3 xl:mx-40">{children}</section>;
 }

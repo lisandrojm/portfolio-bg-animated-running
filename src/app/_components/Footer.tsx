@@ -4,11 +4,11 @@ import styles from '@/_styles/_components/Footer.module.css';
 import siteMetadata from '@/_data/siteMetadata';
 import LinkIcon from '@/_components/_icons/LinksIcons';
 import Link from 'next/link';
-import HeaderFooterWrapper from '@/_components/HeaderFooterWrapper';
+import HeaderFooterContainer from '@/_components/HeaderFooterContainer';
 
 export default function Footer() {
   return (
-    <HeaderFooterWrapper>
+    <HeaderFooterContainer>
       <footer className={`${styles.footer}`}>
         <div className="container mx-auto">
           <div className="border-t border-white pt-3 px-3 flex flex-col md:flex-row justify-between items-end md:items-center gap-4">
@@ -40,6 +40,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </HeaderFooterWrapper>
+    </HeaderFooterContainer>
   );
 }
