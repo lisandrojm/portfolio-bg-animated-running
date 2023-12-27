@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   size?: 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
   font?: 'mono' | 'flex' | 'serif'; // Agregamos la propiedad de fuente

@@ -9,6 +9,7 @@ import Link from './Link';
 import LinkIcon from '@/_components/_icons/LinksIcons';
 import headerNavLinks from '@/_data/headerNavLinks';
 import { Button } from '@/_components/_ui';
+import LinkButton from '@/_components/_ui/LinkButton';
 
 export default function MobileNav() {
   const [navShow, setNavShow] = useState(false);
@@ -32,8 +33,8 @@ export default function MobileNav() {
           <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
         </svg>
       </button>
-      <div className={`fixed left-0 top-0 z-10 h-full w-full transform inset-0 backdrop-blur-xl border-l-[1px] border-orange duration-300 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex justify-between items-center pl-5 pr-3 pt-7 pb-4 border-b border-orange mx-3">
+      <div className={`fixed left-0 top-0 z-10 h-full w-full transform inset-0 backdrop-blur-md border-l-[1px] border-orange duration-300 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className="flex justify-between items-center pl-5 pr-3 pt-7 pb-4 border-b border-white mx-3">
           <div>
             <Link onClick={onToggleNav} className="m-0 leading-5 text-orange font-serif italic text-1xl" href="/" aria-label={siteMetadata.headerTitle}>
               All Killer, <br />
@@ -60,9 +61,9 @@ export default function MobileNav() {
             ))}
           </ul>
           <div className="pl-8 py-4 ">
-            <Button size="xxl" font="mono" onClick={onToggleNav}>
+            <LinkButton href="/form" size="xxl" font="mono" onClick={onToggleNav}>
               Contact Me
-            </Button>
+            </LinkButton>
           </div>
           <div className="pl-8 py-4 flex gap-4">
             <div>
