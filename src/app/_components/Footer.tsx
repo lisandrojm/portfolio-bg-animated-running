@@ -9,7 +9,7 @@ import HeaderFooterContainer from '@/_components/HeaderFooterContainer';
 export default function Footer() {
   return (
     <HeaderFooterContainer>
-      <footer className={`${styles.footer}`}>
+      <footer className={`${styles.body}`}>
         <div className="container mx-auto">
           <div className="border-t border-white pt-3 px-3 flex flex-col md:flex-row justify-between items-end md:items-center gap-4">
             <div className="flex justify-center items-center">
