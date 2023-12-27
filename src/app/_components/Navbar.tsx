@@ -8,8 +8,6 @@ import Image from 'next/image';
 import Link from '@/_components/Link';
 import MobileNav from '@/_components/MobileNav';
 import ThemeSwitcher from '@/_components/ThemeSwitcher';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
 import LinkIcon from '@/_components/_icons/LinksIcons';
 
 interface NavLink {

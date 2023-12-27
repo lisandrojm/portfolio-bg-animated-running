@@ -1,8 +1,9 @@
 /* src/app/_components/_icons/LinkIcons.tsx */
 
-import { FaGithub, FaLinkedin, FaEnvelope, FaReact, FaSun, FaMoon } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaReact } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiTailwindcss } from 'react-icons/si';
+import { IoLogoVercel } from 'react-icons/io5';
 import Link from 'next/link';
 
 const components = {
@@ -12,8 +13,7 @@ const components = {
   react: FaReact,
   nextjs: TbBrandNextjs,
   tailwind: SiTailwindcss,
-  sun: FaSun,
-  moon: FaMoon,
+  vercel: IoLogoVercel,
 };
 
 type SocialIconProps = {
@@ -36,7 +36,6 @@ const Icon = ({ kind, href, size = 8, color = 'orange', onClick, margin, padding
   return (
     <Link target="_blank" rel="noopener noreferrer" href={href}>
       <span className="sr-only">{kind}</span>
-      {/* Use inline styles to add margin and padding */}
       <IconComponent className={`text-${color} text-${size}xl ${margin} ${padding}`} onClick={onClick} />
     </Link>
   );
