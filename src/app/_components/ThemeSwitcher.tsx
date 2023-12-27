@@ -1,11 +1,11 @@
 /* src/app/_components/ThemeSwitcher.tsx */
-
 'use client';
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { FaSun } from 'react-icons/fa';
-import { FaMoon } from 'react-icons/fa';
+
+// Import the Icon component
+import Icon from './_icons/ButtonsIcons';
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -25,9 +25,9 @@ export default function ThemeSwitcher() {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     if (currentTheme === 'dark') {
-      return <FaMoon className="text-2xl text-orange" role="button" onClick={() => setTheme('light')} />;
+      return <Icon kind="moon" size={2} color="orange" onClick={() => setTheme('light')} />;
     } else {
-      return <FaSun className="text-2xl text-orange" role="button" onClick={() => setTheme('dark')} />;
+      return <Icon kind="sun" size={2} color="orange" onClick={() => setTheme('dark')} />;
     }
   };
 

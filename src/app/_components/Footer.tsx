@@ -1,13 +1,9 @@
 /* src/app/_components/Footer.tsx */
-import { FaBeer } from 'react-icons/fa';
 
 import Link from 'next/link';
 import styles from '@/_styles/_components/Footer.module.css';
 import HeaderFooterContainer from '@/_components/HeaderFooterContainer';
-import { FaGithub } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { SiTailwindcss } from 'react-icons/si';
+import LinkIcon from '@/_components/_icons/LinksIcons';
 
 export default function Footer() {
   return (
@@ -21,28 +17,20 @@ export default function Footer() {
               </h6>
               <ul className="flex gap-3">
                 <li>
-                  <Link href={'https://legacy.reactjs.org/'} target="_blank" rel="noopener noreferrer">
-                    <FaReact className="text-2xl text-orange" />
-                  </Link>
+                  <LinkIcon kind="react" href="https://legacy.reactjs.org/" size={2} color="orange" />
                 </li>
                 <li>
-                  <Link href={'https://nextjs.org/'} target="_blank" rel="noopener noreferrer">
-                    <TbBrandNextjs className="text-2xl text-orange" />
-                  </Link>
+                  <LinkIcon kind="nextjs" href="https://nextjs.org/" size={2} color="orange" />
                 </li>
                 <li>
-                  <Link href={'https://tailwindcss.com/'} target="_blank" rel="noopener noreferrer">
-                    <SiTailwindcss className="text-2xl text-orange" />
-                  </Link>
+                  <LinkIcon kind="tailwind" href="https://tailwindcss.com/" size={2} color="orange" />
                 </li>
               </ul>
             </div>
             <div className="flex">
-              <Link href={'https://github.com/lisandrojm/portfolio'} className="flex justify-center items-center font-serif italic text-white text-md gap-3">
-                <div>
-                  <FaGithub className="text-2xl" />
-                </div>
-                <div>site code →</div>
+              <LinkIcon kind="github" href="https://github.com/lisandrojm/portfolio" size={2} color="white" />
+              <Link href={'https://github.com/lisandrojm/portfolio'} className="font-serif italic text-white text-md ml-3">
+                site code →
               </Link>
             </div>
           </div>
