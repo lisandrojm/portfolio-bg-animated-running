@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-between">
             {/* Fonts test */}
             <div className="border rounded p-3 my-1 mb-3">
-              <h1 className="font-serif italic text-3xl">Home</h1>
+              <h1 className="font-serif italic text-3xl">Homes</h1>
             </div>
             <div className="border rounded p-3 my-1">
               <h1 className="font-serif italic text-3xl">Fonts</h1>

@@ -585,7 +585,7 @@ body {
 section#animated-cta-bar {
   position: relative;
   overflow-x: hidden; /* Corregir la propiedad de desbordamiento horizontal */
-  height: 100vh;
+  height: 100dvh;
 }
 section#animated-cta-bar .cta-content {
   display: block;
