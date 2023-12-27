@@ -585,7 +585,7 @@ body {
 section#animated-cta-bar {
   position: relative;
   /*   overflow: hidden; */
-  height: 80dvh;
+  height: 100vh;
 }
 section#animated-cta-bar .cta-content {
   display: block;
