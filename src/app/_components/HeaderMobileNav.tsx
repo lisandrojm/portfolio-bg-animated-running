@@ -6,6 +6,7 @@ import styles from '@/_styles/_components/MobileNav.module.css';
 import { useState } from 'react';
 import siteMetadata from '@/_data/siteMetadata';
 import Link from './Link';
+import LinkIcon from '@/_components/_icons/LinksIcons';
 import headerNavLinks from '@/_data/headerNavLinks';
 import { Button } from '@/_components/_ui';
 
@@ -26,13 +27,13 @@ export default function MobileNav() {
 
   return (
     <div>
-      <button aria-label="Toggle Menu" onClick={onToggleNav} className="lg:hidden pl-3">
+      <button aria-label="Toggle Menu" onClick={onToggleNav} className="lg:hidden pl-3 flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-8 w-8 text-white">
           <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
         </svg>
       </button>
-      <div className={`fixed left-0 top-0 z-10 h-full w-full transform inset-0 backdrop-blur-lg border-l-[1px] border-orange duration-300 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="flex justify-between items-center pl-8 pr-6 pt-7 pb-4 border-b border-orange">
+      <div className={`fixed left-0 top-0 z-10 h-full w-full transform inset-0 backdrop-blur-md border-l-[1px] border-orange duration-300 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className="flex justify-between items-center pl-5 pr-3 pt-5 pb-4 border-b border-white mx-3">
           <div>
             <Link onClick={onToggleNav} className="m-0 leading-7 text-orange font-serif italic text-2xl" href="/" aria-label={siteMetadata.headerTitle}>
               All Killer, <br />
@@ -47,7 +48,7 @@ export default function MobileNav() {
             </button>
           </div>
         </div>
-        <div className="fixed h-full">
+        <div className="fixed h-full w-full">
           <ul>
             {headerNavLinks.map((link, index) => (
               <li key={link.title} className="pl-8 py-4">
@@ -62,6 +63,14 @@ export default function MobileNav() {
             <Button size="xxl" font="mono" onClick={onToggleNav}>
               Contact Me
             </Button>
+          </div>
+          <div className="pl-8 py-4 flex gap-4">
+            <div>
+              <LinkIcon kind="github" href={siteMetadata.github} size={3} color="white" />
+            </div>
+            <div>
+              <LinkIcon kind="linkedin" href={siteMetadata.github} size={3} color="white" />
+            </div>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function Navbar() {
       <header className={`${styles.navbar}`}>
         <nav>
           <div className="container mx-auto">
-            <div className="flex items-end justify-between border-b border-white pb-3 px-3">
+            <div className="flex items-center justify-between border-b border-white pb-2 px-3">
               <div>
                 <Link href="/" aria-label={siteMetadata.headerTitle}>
                   <div className="flex items-center justify-between">
