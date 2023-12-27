@@ -35,22 +35,26 @@ export default function Home() {
       <ul className="floating-icons">
         <li className="drift drift-1 delay-1">
           <div className="float float-1">
-            <BgIcons kind="github" textColor="orange" size={1} />
+            {/*GitHub */}
+            <BgIcons kind="github" textColor="orange" size={2} />
           </div>
         </li>
         <li className="drift drift-2 delay-3">
           <div className="float float-2">
-            <BgIcons kind="github" textColor="orange" size={2} />
+            {/*React */}
+            <BgIcons kind="react" textColor="orange" size={3} />
           </div>
         </li>
         <li className="drift drift-3">
           <div className="float float-3">
-            <i className="fa fa-internet-explorer lg"></i>
+            {/*Html */}
+            <BgIcons kind="html" textColor="orange" size={1} />
           </div>
         </li>
         <li className="drift drift-4 delay-2">
           <div className="float float-4">
-            <i className="fa fa-edge lg"></i>
+            {/*Nextjs */}
+            <BgIcons kind="nextjs" textColor="orange" size={1} />
           </div>
         </li>
         <li className="drift drift-5">

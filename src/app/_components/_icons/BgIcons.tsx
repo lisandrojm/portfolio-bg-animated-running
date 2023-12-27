@@ -12,6 +12,7 @@ type BgIconsProps = {
 };
 
 const components = {
+  html: FaHtml5,
   github: FaGithub,
   react: FaReact,
   nextjs: TbBrandNextjs,
