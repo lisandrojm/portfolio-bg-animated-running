@@ -9,7 +9,6 @@ import { SiTailwindcss, SiExpress, SiNestjs, SiTypescript, SiMongodb } from 'rea
 
 type BgIconsProps = {
   kind: keyof typeof components;
-  textColor: string;
   size?: number;
 };
 
@@ -30,11 +29,11 @@ const components = {
   mongodb: SiMongodb,
 };
 
-const BgIcons: React.FC<BgIconsProps> = ({ kind, textColor, size = 2 }) => {
+const BgIcons: React.FC<BgIconsProps> = ({ kind, size = 2 }) => {
   const IconComponent = components[kind];
 
   return (
-    <span className={`text-${textColor} text-${size}xl`}>
+    <span className={`text-red text-${size}xl opacity-40`}>
       <IconComponent />
     </span>
   );
@@ -42,7 +41,6 @@ const BgIcons: React.FC<BgIconsProps> = ({ kind, textColor, size = 2 }) => {
 
 BgIcons.propTypes = {
   kind: PropTypes.oneOf(Object.keys(components) as (keyof typeof components)[]).isRequired,
-  textColor: PropTypes.string.isRequired,
   size: PropTypes.number,
 };
 
