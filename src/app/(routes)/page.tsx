@@ -29,6 +29,11 @@ export default function Home() {
               <p className={`font-serif italic`}>Roboto Serif italic</p>
               <p className={`font-serif italic font-bold uppercase`}>Roboto Serif italic bold uppercase</p>
             </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum odit numquam, voluptate facilis delectus veritatis amet aliquam eius odio consequatur. Ipsam maiores similique eius veniam neque qui voluptas consequuntur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum odit numquam, voluptate facilis delectus veritatis amet aliquam eius odio consequatur. Ipsam maiores similique eius veniam neque qui voluptas consequuntur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum odit numquam, voluptate facilis delectus veritatis amet aliquam eius odio consequatur. Ipsam maiores similique eius veniam neque qui voluptas consequuntur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum odit numquam, voluptate facilis delectus veritatis amet aliquam eius odio consequatur. Ipsam maiores similique eius veniam neque qui voluptas consequuntur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsum odit numquam, voluptate facilis delectus veritatis amet aliquam eius odio consequatur. Ipsam maiores similique eius veniam neque qui voluptas consequuntur.</p>
           </div>
         </SectionContainer>
       </div>

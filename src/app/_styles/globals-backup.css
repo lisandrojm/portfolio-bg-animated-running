@@ -1,0 +1,154 @@
+/* src/app/_styles/globals.css */
+
+/* Table of Content
+====================
+* Tailwind imports
+* Root elements
+* Global variables
+* Fonts
+* Media queries
+*/
+/* line  590 vh bg */
+
+/* Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global variables */
+@layer base {
+  :root {
+    /* Colors */
+    --accent-1: #000000;
+    --accent-2: #ffffff;
+    --accent-3: #f7768e;
+    --accent-4: #ba9af7;
+    --accent-5: #ff9e63;
+    --accent-6: #08c294;
+    --accent-7: #15151e;
+    --accent-8: #2d64da;
+    --accent-9: #79a1f7;
+    --accent-10: #ba3a93;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /*---------------------/* Tailwind color tags */
+      --accent-1: #ffffff; /* white */
+      --accent-2: #000000; /* black */
+      --accent-3: #15151e; /* darkblue */
+      --accent-4: #08c294; /* green */
+      --accent-5: #79a1f7; /* blue */
+      --accent-6: #ba9af7; /* violet */
+      --accent-7: #f7768e; /* red */
+      --accent-8: #ff9e63; /* orange */
+      --accent-9: #ba3a93; /* darkred */
+      --accent-10: #2d64da; /* electricblue */
+    }
+  }
+  [data-theme='dark'] {
+    --accent-1: #ffffff;
+    --accent-2: #000000;
+    --accent-3: #15151e;
+    --accent-4: #08c294;
+    --accent-5: #79a1f7;
+    --accent-6: #ba9af7;
+    --accent-7: #f7768e;
+    --accent-8: #ff9e63;
+    --accent-9: #ba3a93;
+    --accent-10: #2d64da;
+  }
+
+  [data-theme='light'] {
+    --accent-1: #000000;
+    --accent-2: #ffffff;
+    --accent-3: #f7768e;
+    --accent-4: #ba9af7;
+    --accent-5: #ff9e63;
+    --accent-6: #08c294;
+    --accent-7: #15151e;
+    --accent-8: #2d64da;
+    --accent-9: #79a1f7;
+    --accent-10: #ba3a93;
+  }
+}
+/* Global styles */
+
+img:hover {
+  opacity: 0.9;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+button:hover,
+a:hover,
+[role='button']:hover {
+  --accent-1: var(--accent-5);
+  --accent-2: var(--accent-8);
+  --accent-6: var(--accent-4);
+  --accent-7: var(--accent-3);
+  --accent-8: var(--accent-5);
+}
+
+body {
+  color: var(--accent-1);
+  background: var(--accent-2);
+}
+
+/* Fonts */
+
+.font-mono {
+  font-family: var(--font-mono), sans-serif;
+}
+.font-flex {
+  font-family: var(--font-flex), sans-serif;
+}
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+/* Media queries */
+
+@media (min-width: 992px) {
+  /* ... */
+}
+
+@media (min-width: 768px) {
+  /* ... */
+}
+
+@media (min-width: 1200px) {
+  /* ... */
+}
+
+@media (min-width: 1300px) {
+  /* ... */
+}
+
+@media (min-width: 1400px) {
+  /* ... */
+}
+
+@media (max-width: 1399px) {
+  /* ... */
+}
+
+@media (max-width: 1199px) {
+  /* ... */
+}
+
+@media (max-width: 991px) {
+  /* ... */
+}
+
+@media (max-width: 767px) {
+  /* ... */
+}
+
+@media (max-width: 540px) {
+  /* ... */
+}
