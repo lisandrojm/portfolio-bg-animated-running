@@ -351,8 +351,8 @@ body {
     transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translateY(110%);
+    transform: translateY(110%);
   }
 }
 @keyframes float-8 {
@@ -584,7 +584,7 @@ body {
 
 section#animated-cta-bar {
   position: relative;
-  overflow: hidden; /* Corregir la propiedad de desbordamiento horizontal */
+  overflow: hidden;
 }
 
 section#animated-cta-bar ul.floating-icons {
@@ -597,12 +597,10 @@ section#animated-cta-bar ul.floating-icons {
   left: 0;
   width: 100%;
   height: 100lvh;
-  /*  */
-  opacity: 0.8;
   z-index: -10;
 }
 section#animated-cta-bar ul.floating-icons li {
-  /*   opacity: 0; */
+  opacity: 0;
   position: absolute;
   display: block;
   right: 0;

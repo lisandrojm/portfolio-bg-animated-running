@@ -29,11 +29,10 @@ export default function Home() {
               <p className={`font-serif italic`}>Roboto Serif italic</p>
               <p className={`font-serif italic font-bold uppercase`}>Roboto Serif italic bold uppercase</p>
             </div>
+            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
+            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
           </div>
-          <div className="flex flex-col items-center justify-between">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
-          </div>
+          <div className="flex flex-col items-center justify-between"></div>
         </SectionContainer>
       </div>
       <ul className="floating-icons">
