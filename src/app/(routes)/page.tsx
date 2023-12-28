@@ -12,13 +12,13 @@ import BgIcons from '@/_components/_icons/BgIcons';
 
 export default function Home() {
   return (
-    <section id="animated-cta-bar" className={`${styles.testing}`}>
+    <section id="animated-cta-bar">
       <div className="cta-content">
         <SectionContainer>
           <div className="flex flex-col items-center justify-between">
             {/* Fonts test */}
             <div className="border rounded p-3 my-1 mb-3">
-              <h1 className="font-serif italic text-3xl">Homes</h1>
+              <h1 className="font-serif italic text-3xl">Home</h1>
             </div>
             <div className="border rounded p-3 my-1">
               <h1 className="font-serif italic text-3xl">Fonts</h1>
@@ -29,6 +29,13 @@ export default function Home() {
               <p className={`font-serif italic`}>Roboto Serif italic</p>
               <p className={`font-serif italic font-bold uppercase`}>Roboto Serif italic bold uppercase</p>
             </div>
+          </div>
+          <div className="flex flex-col items-center justify-between">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
           </div>
         </SectionContainer>
       </div>
@@ -95,14 +102,14 @@ export default function Home() {
         </li>
         <li className="drift drift-5 delay-4">
           <div className="float float-7">
-            {/*Nestjs*/}
-            <BgIcons kind="nestjs" size={3} />
+            {/*Express*/}
+            <BgIcons kind="express" size={3} />
           </div>
         </li>
         <li className="drift drift-2 delay-5">
           <div className="float float-3">
-            {/*Express*/}
-            <BgIcons kind="express" size={3} />
+            {/*Nestjs*/}
+            <BgIcons kind="nestjs" size={3} />
           </div>
         </li>
         <li className="drift drift-3 delay-1 mt-5">
