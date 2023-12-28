@@ -33,9 +33,6 @@ export default function Home() {
           <div className="flex flex-col items-center justify-between">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque esse obcaecati et, praesentium placeat excepturi modi nulla mollitia eius, rem molestiae dolores vitae aspernatur quis! Minima omnis ipsam iusto.</p>
           </div>
         </SectionContainer>
       </div>
