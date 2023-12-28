@@ -31,6 +31,11 @@ export default function Home() {
             </div>
             <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
             <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
+            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
+            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
+            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
+            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
+            <p className="p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quidem architecto aliquam quia facere dolor velit sapiente, culpa voluptas unde cumque dignissimos, reiciendis possimus. Quia quidem autem consequatur sint magni.</p>
           </div>
           <div className="flex flex-col items-center justify-between"></div>
         </SectionContainer>
