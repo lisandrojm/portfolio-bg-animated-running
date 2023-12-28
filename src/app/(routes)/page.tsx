@@ -51,7 +51,7 @@ export default function Home() {
         <li className="drift drift-3">
           <div className="float float-3">
             {/*Html */}
-            <BgIcons kind="html" size={1} />
+            <BgIcons kind="html" size={2} />
           </div>
         </li>
         <li className="drift drift-4 delay-2">
@@ -105,13 +105,13 @@ export default function Home() {
         <li className="drift drift-2 delay-5">
           <div className="float float-3">
             {/*Nestjs*/}
-            <BgIcons kind="nestjs" size={3} />
+            <BgIcons kind="nestjs" size={2} />
           </div>
         </li>
         <li className="drift drift-3 delay-1 mt-5">
           <div className="float float-8">
             {/*MongoDb*/}
-            <BgIcons kind="mongodb" size={1} />
+            <BgIcons kind="mongodb" size={2} />
           </div>
         </li>
         <li className="drift drift-6 delay-5">
